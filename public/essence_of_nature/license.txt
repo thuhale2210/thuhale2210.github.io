@@ -1,0 +1,11 @@
+Model Information:
+* title:	Essence of nature
+* source:	https://sketchfab.com/3d-models/essence-of-nature-dcdbf2a99bb94adabeba0913d6dd5012
+* author:	DailyArt (https://sketchfab.com/D.art)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Essence of nature" (https://sketchfab.com/3d-models/essence-of-nature-dcdbf2a99bb94adabeba0913d6dd5012) by DailyArt (https://sketchfab.com/D.art) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
