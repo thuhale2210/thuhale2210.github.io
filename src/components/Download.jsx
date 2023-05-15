@@ -1,7 +1,7 @@
 import React from 'react';
 // import { saveAs } from 'file-saver';
 
-const RESUME_PDF_URL = 'public/Resume.pdf'
+const RESUME_PDF_URL = 'https://drive.google.com/file/d/1NyoqHN4-TL4vE0qDb2_uKKuD8OiEO23y/view?usp=share_link'
 
 function DownloadButton() {
     const downloadFileAtUrl=(url) => {
