@@ -1,7 +1,7 @@
 import React from 'react';
 // import { saveAs } from 'file-saver';
 
-const RESUME_PDF_URL = 'http://localhost:5173/Resume.pdf'
+const RESUME_PDF_URL = 'public/Resume.pdf'
 
 function DownloadButton() {
     const downloadFileAtUrl=(url) => {
