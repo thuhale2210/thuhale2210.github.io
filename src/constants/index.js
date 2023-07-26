@@ -49,7 +49,7 @@ const services = [
         icon: mobile,
     },
     {
-        title: "Continuously updating...",
+        title: "Updating...",
         icon: backend,
     },
 ];

@@ -21,9 +21,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[16px] max-w-4xl leading-[30px]'
       >
-        I'm a software developer with experience in C# and JavaScript. I'm interested
-        in developing efficient, scalable, and user-friendly solutions that solve real-world problems. 
-        I also have huge love for game development. Let's work together to bring your ideas to life!
+        I am Software Engineer student whose interests are in web and game development, cloud computing and security.
+        I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
+        solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-10 flex flex-wrap gap-10'>
