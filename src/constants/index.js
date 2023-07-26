@@ -11,6 +11,8 @@ import {
     flappybird,
     pokemoncatcher,
     newproject,
+    fitnessapp,
+    thelongjourney,
     csharp,
     unity,
     linux,
@@ -139,7 +141,7 @@ const technologies = [
 
 const projects = [
     {
-        name: "Flappy Bird [In Another World]",
+        name: "Flappy Bird In Another World",
         description:
             "An innovated version of the classic Flappy Bird game with added challenges and unique features",
         tags: [
@@ -162,7 +164,7 @@ const projects = [
         tags: [
             {
                 name: "JavaScript",
-                color: "blue-text-gradient",
+                color: "yellow-text-gradient",
             },
             {
                 name: "HTML",
@@ -177,7 +179,61 @@ const projects = [
         source_code_link: "https://github.com/thuhale2210/Pokemon-Catcher---A-Simple-Canvas-Game",
     },
     {
-        name: "Coming soon",
+        name: "Fitness App",
+        description:
+            "A fitness app that fetch data (exercise descriptions and relevant Youtube videos) from RapidAPI",
+        tags: [
+            {
+                name: "JavaScript",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "React.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "HTML",
+                color: "green-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: fitnessapp,
+        source_code_link: "https://github.com/thuhale2210/Fitness-app",
+    },
+    {
+        name: "The Long Journey",
+        description:
+            "An app that records your experience in the world of art",
+        tags: [
+            {
+                name: "TypeScript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Next.js",
+                color: "gray-text-gradient",
+            },
+            {
+                name: "TailwindCSS",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "green-text-gradient",
+            },
+            {
+                name: "ComingSoon",
+                color: " ",
+            },
+        ],
+        image: thelongjourney,
+        source_code_link: " ",
+    },
+    {
+        name: "TBA",
         description:
             "A multi-player tabletop game that will send you into the madness",
         tags: [
@@ -188,6 +244,10 @@ const projects = [
             {
                 name: "Unity",
                 color: "green-text-gradient",
+            },
+            {
+                name: "ComingSoon",
+                color: " ",
             },
         ],
         image: newproject,

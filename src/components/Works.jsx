@@ -17,17 +17,17 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <Tilt className='xs:w-[360px] w-full'>
+    <Tilt className='xs:w-[380px] w-full'>
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        className='bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl sm:w-[360px] w-full'>
+        className='bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl sm:w-[380px] w-full'>
         <div
           options={{
             max: 45,
             scale: 1,
             speed: 450,
           }}
-          className='bg-primary/90 p-5 rounded-2xl sm:w-[360px] w-full'
+          className='bg-primary/90 p-5 rounded-2xl sm:w-[380px] w-full'
         >
           <div className='relative w-full h-[230px]'>
             <img
