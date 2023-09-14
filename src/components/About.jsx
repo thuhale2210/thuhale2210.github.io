@@ -1,4 +1,3 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -22,7 +21,7 @@ const About = () => {
         className='mt-4 text-secondary text-[16px] max-w-4xl leading-[30px]'
       >
         I am Software Engineer student whose interests are in web and game development, cloud computing and security.
-        I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
+        I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
         solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
@@ -46,6 +45,7 @@ const About = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
@@ -53,6 +53,7 @@ const ServiceCard = ({ index, title, icon }) => (
       className='w-full bg-gradient-to-r from-pink-600 to-purple-600 p-[1px] rounded-[20px] shadow-card background-animate'
     >
       <div
+        // eslint-disable-next-line react/no-unknown-property
         options={{
           max: 45,
           scale: 1,

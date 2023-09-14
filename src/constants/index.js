@@ -12,7 +12,7 @@ import {
     pokemoncatcher,
     newproject,
     fitnessapp,
-    thelongjourney,
+    financetrackerapp,
     csharp,
     unity,
     linux,
@@ -204,9 +204,9 @@ const projects = [
         source_code_link: "https://github.com/thuhale2210/Fitness-app",
     },
     {
-        name: "The Long Journey",
+        name: "Personal Finance Tracking App",
         description:
-            "An app that records your experience in the world of art",
+            "An app that provides users with a range of financial tracking features, including expense tracking, income monitoring, budgeting tools, and data visualizations to help them gain insights into their financial health",
         tags: [
             {
                 name: "TypeScript",
@@ -229,7 +229,7 @@ const projects = [
                 color: " ",
             },
         ],
-        image: thelongjourney,
+        image: financetrackerapp,
         source_code_link: " ",
     },
     {

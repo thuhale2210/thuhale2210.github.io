@@ -22,7 +22,7 @@ import oraclesql from "./tech/oraclesql.png";
 import flappybird from "./project/flappybird.gif";
 import pokemoncatcher from "./project/pokemoncatcher.gif";
 import fitnessapp from "./project/fitnessapp.png";
-import thelongjourney from "./project/thelongjourney.png";
+import financetrackerapp from "./project/financetrackerapp.png";
 import newproject from "./project/comingsoon.jpg";
 
 export {
@@ -49,5 +49,5 @@ export {
   pokemoncatcher,
   newproject,
   fitnessapp,
-  thelongjourney
+  financetrackerapp
 };
