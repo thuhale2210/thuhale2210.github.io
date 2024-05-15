@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
           </motion.div>
 
-          <motion.div variants={textVariant()} className='flex flex-col xxxs:ml-0 xxs:ml-0 xs:ml-0 sm:ml-20 md:ml-20 lg:ml-28 xl:ml-36'>
+          <motion.div variants={textVariant()} className='flex flex-col xxxs:ml-0 xxs:ml-0 xs:ml-0 sm:ml-20 md:ml-20 lg:ml-28 xl:ml-36 mt-5'>
             <div className='flex flex-row'>
               <a href='#experience' className='flex items-center gap-2' onClick={() => { window.scrollTo(0, 0) }}>
                 <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-tl-2xl bg-[#f0e6ef] p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-card background-animate'>
