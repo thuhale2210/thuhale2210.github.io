@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -19,14 +21,14 @@ const ProjectCard = ({
     <Tilt className='xs:w-[380px] w-full'>
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        className='bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl sm:w-[380px] w-full'>
+        className='rounded-2xl sm:w-[380px] w-full'>
         <div
           options={{
             max: 45,
             scale: 1,
             speed: 450,
           }}
-          className='bg-primary/90 p-5 rounded-2xl sm:w-[380px] w-full'
+          className='border border-gray-600 p-5 rounded-2xl sm:w-[380px] w-full shadow-card background-animate'
         >
           <div className='relative w-full h-[230px]'>
             <img
@@ -70,7 +72,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -100,4 +102,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Projects, "projects");

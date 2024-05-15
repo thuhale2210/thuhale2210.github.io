@@ -20,12 +20,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[16px] max-w-4xl leading-[30px]'
       >
-        I am Software Engineer student whose interests are in web and game development, cloud computing and security.
+        I am Software Engineer student whose interests are in software development, cloud computing and security.
         I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
-        solutions that solve real-world problems. Let's work together to bring your ideas to life!
+        solutions that solve real-world problems. Let&apos;s work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-10 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap gap-5'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
@@ -36,7 +36,7 @@ const About = () => {
         className="py-10">
         <div className="grid gap-8 items-start place-items-end">
           <div className="relative">
-            <div className="absolute -inset-1.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 background-animate"></div>
+            <div className="absolute -inset-1.5 border border-gray-600 rounded-lg shadow-card background-animate"></div>
             <DownloadButton />
           </div>
         </div>
@@ -50,7 +50,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full bg-gradient-to-r from-pink-600 to-purple-600 p-[1px] rounded-[20px] shadow-card background-animate'
+      className='w-full border border-gray-600 p-[1px] rounded-[20px] shadow-card background-animate'
     >
       <div
         // eslint-disable-next-line react/no-unknown-property
@@ -59,7 +59,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary/90 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}

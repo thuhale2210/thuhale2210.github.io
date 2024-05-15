@@ -15,7 +15,7 @@ function DownloadButton() {
     return (
         <button 
         onClick={() => {downloadFileAtUrl(RESUME_PDF_URL)}}
-        className="relative px-10 py-7 bg-tertiary/90 rounded-lg leading-none flex items-center border-none">
+        className="relative px-10 py-7 rounded-lg leading-none flex items-center border-none">
             Download Resume
         </button>
     );

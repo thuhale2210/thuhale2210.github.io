@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, github, linkedin } from "../assets";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -16,7 +18,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <ul className="list-non hidden sm:flex flex-row space-x-20">
           {navLinks.map((Link) => (
-            <li key={Link.id} className={`${active === Link.title ? 'text-white' : 'text-secondary'} hover:text-white text-[18px] font-medium cursor-pointer`}
+            <li key={Link.id} className={`${active === Link.title ? 'text-white' : 'text-secondary'} hover:text-white text-[15px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}>
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
@@ -52,20 +54,21 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="sm:hidden md:hidden flex flex-1 justify-end items-center">
           <img src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}></img>
         </div>
 
-        <div
+        <motion.div
+          variants={fadeIn("right", "spring", 1.5)}
           className={`${!toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } bg-[#2b2d42] p-6 absolute top-20 right-0 mx-4 my-2 min-w-[180px] z-10 rounded-xl`}
         >
           <ul className="list-non flex justify-end items-start flex-col gap-4">
             {navLinks.map((Link) => (
-              <li key={Link.id} className={`${active === Link.title ? 'text-white' : 'text-secondary'} 
+              <li key={Link.id} className={`${active === Link.title ? 'text-white' : 'text-secondary'}
               font-poppins font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
                   setToggle(!toggle);
@@ -75,7 +78,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
     </nav>
   );
