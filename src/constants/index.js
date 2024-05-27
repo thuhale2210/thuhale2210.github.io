@@ -266,7 +266,7 @@ const projects = [
     {
         name: "'TrackNTrain' Fitness App",
         description:
-            "TrackNTrain mimics a commercial gym app, allowing users to book sessions with available trainers, receive exercise recommendations, and track their fitness routines.",
+            "TrackNTrain mimics a commercial gym app, allowing users to book sessions with available trainers, receive exercise recommendations, and track their fitness routines",
         tags: [
             {
                 name: "Group Project",
@@ -324,7 +324,7 @@ const projects = [
     {
         name: "'TutorMe' Tutoring App",
         description:
-            "An app that provides users with a range of financial tracking features, including expense tracking, income monitoring, budgeting tools, and data visualizations to help them gain insights into their financial health",
+            "A comprehensive Software Systems Design document for an innovative tutoring solution app, addressing challenges faced by students in higher education and proposing solutions to improve their learning experience",
         tags: [
             {
                 name: "Group Project",
