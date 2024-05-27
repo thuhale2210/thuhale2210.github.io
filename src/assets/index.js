@@ -31,6 +31,7 @@ import fitnessapp from "./project/fitnessapp.png";
 import trackntrain from "./project/trackntrain.png";
 import portfolio from "./project/portfolio.png";
 import financetrackerapp from "./project/financetrackerapp.png";
+import tutorme from "./project/tutorme.png";
 import newproject from "./project/comingsoon.jpg";
 
 export {
@@ -65,5 +66,6 @@ export {
   fitnessapp,
   trackntrain,
   portfolio,
-  financetrackerapp
+  financetrackerapp,
+  tutorme
 };

@@ -18,7 +18,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <Tilt className='xs:w-[380px] w-full'>
+    <Tilt className='xs:w-[550px] w-full'>
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
         className='rounded-2xl sm:w-[380px] w-full'>
@@ -28,9 +28,9 @@ const ProjectCard = ({
             scale: 1,
             speed: 450,
           }}
-          className='border border-gray-600 p-5 rounded-2xl sm:w-[380px] w-full shadow-card background-animate'
+          className='border border-gray-600 p-5 rounded-2xl sm:w-[525px] w-full shadow-card background-animate'
         >
-          <div className='relative w-full h-[230px]'>
+          <div className='relative w-full h-full'>
             <img
               src={image}
               alt='project_image'

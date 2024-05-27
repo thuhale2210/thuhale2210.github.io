@@ -17,6 +17,7 @@ import {
     trackntrain,
     portfolio,
     financetrackerapp,
+    tutorme,
     csharp,
     unity,
     linux,
@@ -292,6 +293,52 @@ const projects = [
         source_code_link: "https://github.com/thuhale2210/comp229-group2-trackntrain",
     },
     {
+        name: "Portfolio Website",
+        description:
+            "A place to show my passion, projects, and achievements. A way to share my thoughts on the world and technology",
+        tags: [
+            {
+                name: "Solo Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "JavaScript",
+                color: "",
+            },
+            {
+                name: "React.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "HTML",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: portfolio,
+        source_code_link: "https://github.com/thuhale2210/thuhale2210.github.io",
+    },
+    {
+        name: "'TutorMe' Tutoring App",
+        description:
+            "An app that provides users with a range of financial tracking features, including expense tracking, income monitoring, budgeting tools, and data visualizations to help them gain insights into their financial health",
+        tags: [
+            {
+                name: "Group Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "Software System Design Project",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: tutorme,
+        source_code_link: "https://drive.google.com/file/d/1Df8tyQqdGded2NAb94PBV5UFU71dDcgn/view?usp=share_link",
+    },
+    {
         name: "Flappy Bird In Another World",
         description:
             "An innovated version of the classic Flappy Bird game with added challenges and unique features",
@@ -336,35 +383,6 @@ const projects = [
         ],
         image: pokemoncatcher,
         source_code_link: "https://github.com/thuhale2210/Pokemon-Catcher---A-Simple-Canvas-Game",
-    },
-    {
-        name: "Portfolio Website",
-        description:
-            "A place to show my passion, projects, and achievements. A way to share my thoughts on the world and technology",
-        tags: [
-            {
-                name: "Solo Project",
-                color: "yellow-text-gradient",
-            },
-            {
-                name: "JavaScript",
-                color: "",
-            },
-            {
-                name: "React.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "HTML",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Tailwind CSS",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: portfolio,
-        source_code_link: "https://github.com/thuhale2210/thuhale2210.github.io",
     },
 ];
 
