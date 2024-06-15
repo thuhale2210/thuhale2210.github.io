@@ -1,61 +1,45 @@
 /* eslint-disable react/prop-types */
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 
-import "react-vertical-timeline-component/style.min.css";
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
     return (
-        <VerticalTimelineElement
-            contentStyle={{
-                background: "#2a2945",
-                opacity: 0.8,
-                color: "#fff",
-                border: `1px solid #4b5563`,
-                borderRadius: "15px",
-                boxShadow: "0px 35px 120px -15px #211e35",
-            }}
-            contentArrowStyle={{ borderRight: '7px solid #4b5563' }}
-            date={experience.date}
-            iconStyle={{ background: experience.iconBg }}
-            icon={
-                <div className='flex justify-center items-center w-full h-full'>
-                    <img
-                        src={experience.icon}
-                        alt={experience.company_name}
-                        className='w-[65%] h-[65%] object-contain'
-                    />
+        <Tilt className='w-full mt-10'>
+            <motion.div
+                variants={fadeIn("up", "spring", 0.5, 0.75)}
+                className='rounded-2xl w-full'>
+                <div className="flex flex-row w-full">
+                    <div className="gradient-border bg-gradient-to-r from-transparent to-[#2e264b] p-10 rounded-3xl w-2/5">
+                        <div className='h-full mt-10'>
+                            <p className='text-secondary text-[17px]'>{experience.date}</p>
+                            <h3 className='mt-4 text-white font-bold text-[27px]'>{experience.title}</h3>
+                            <p className='mt-4 mb-8 text-secondary text-[17px]'>{experience.company_name}</p>
+                        </div>
+                    </div>
+                    <div className='gradient-border p-5 rounded-2xl w-3/5 shadow-card'>
+                        <ul className='m-5 flex flex-wrap gap-3'>
+                            {experience.points.map((point, index) => (
+                                <li
+                                    key={`experience-point-${index}`}
+                                    className='text-secondary text-[15px] pl-1 tracking-wider'
+                                >
+                                    {point}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-            }
-        >
-            <div>
-                <h3 className='text-white text-[24px] font-bold mt-5 ml-3'>{experience.title}</h3>
-                <p className='text-secondary text-[16px] font-semibold' style={{ margin: '12px' }}>
-                    {experience.company_name}
-                </p>
-            </div>
+            </motion.div>
+        </Tilt>
 
-            <ul className='mt-3 mb-5 list-disc ml-7 space-y-2 gap-5'>
-                {experience.points.map((point, index) => (
-                    <li
-                        key={`experience-point-${index}`}
-                        className='text-white-100 text-[14px] pl-1 tracking-wider'
-                    >
-                        {point}
-                    </li>
-                ))}
-            </ul>
-        </VerticalTimelineElement>
     );
-};
+}
 
 const Experience = () => {
     return (
@@ -69,15 +53,13 @@ const Experience = () => {
                 </h2>
             </motion.div>
 
-            <div className='mt-10 flex flex-col'>
-                <VerticalTimeline>
-                    {experiences.map((experience, index) => (
-                        <ExperienceCard
-                            key={`experience-${index}`}
-                            experience={experience}
-                        />
-                    ))}
-                </VerticalTimeline>
+            <div className='flex flex-col'>
+                {experiences.map((experience, index) => (
+                    <ExperienceCard
+                        key={`experience-${index}`}
+                        experience={experience}
+                    />
+                ))}
             </div>
         </>
     );

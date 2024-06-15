@@ -10,14 +10,18 @@ import {
     tailwind,
     git,
     figma,
+    kotlin,
+    java,
+    python,
+    nextjs,
+    nodejs,
     flappybird,
     pokemoncatcher,
-    // newproject,
-    // fitnessapp,
     trackntrain,
     portfolio,
     financetrackerapp,
     tutorme,
+    restaurantorderapp,
     csharp,
     unity,
     linux,
@@ -77,7 +81,7 @@ const services = [
         icon: web,
     },
     {
-        title: "Game Development",
+        title: "Mobile App Development",
         icon: mobile,
     },
     {
@@ -92,20 +96,36 @@ const technologies = [
         icon: csharp,
     },
     {
-        name: "Unity",
-        icon: unity,
-    },
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
+        name: "Java",
+        icon: java,
     },
     {
         name: "JavaScript",
         icon: javascript,
+    },
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "Kotlin",
+        icon: kotlin,
+    },
+    // {
+    //     name: "HTML 5",
+    //     icon: html,
+    // },
+    // {
+    //     name: "CSS 3",
+    //     icon: css,
+    // },
+    {
+        name: "Next.js",
+        icon: nextjs,
+    },
+    {
+        name: "Node.js",
+        icon: nodejs,
     },
     {
         name: "React JS",
@@ -131,19 +151,23 @@ const technologies = [
         name: "Linux",
         icon: linux,
     },
+    // {
+    //     name: "Unity",
+    //     icon: unity,
+    // }
 ];
 
 const experiences = [
     {
-        title: "Business and IT Architecture Analyst",
+        title: "Business and IT Architecture Analyst (Co-op)",
         company_name: "Centennial College",
         icon: centennialcollege,
         iconBg: "#0b0f17",
         date: "Jan 2024 - Apr 2024",
         points: [
-            "Directly reported to Director of Enterprise Governance, Risk Management and Chief Architect to ensure alignment between business objectives and technical specifications",
-            "Participated in the creation of business documentation and models",
-            "Engaged with internal and external stakeholders to gather requirements, evaluate solutions, and communicate recommendations, demonstrating strong interpersonal and communication skills within a professional environment",
+            "- Directly reported to Director of Enterprise Governance, Risk Management and Chief Architect to ensure alignment between business objectives and technical specifications",
+            "- Engaged with internal and external stakeholders to gather requirements, evaluate solutions, and communicate recommendations",
+            "- Led a team of 3 members in facilitating an ITIL workshop and collaborated with stakeholders to establish an agreed plan on incident severity levels for the college. Over 90% of attendees expressing satisfaction with the organization and content delivery"
         ],
     },
     {
@@ -153,34 +177,11 @@ const experiences = [
         iconBg: "#0b0f17",
         date: "2021 - 2022",
         points: [
-            "Collected and processed data for monthly risk reports",
-            "Extracted and transformed data to resolve data issues and find insights using SQL",
-            "Wrote report and performed analysis on RWA, CAR, capital consumption and risk-adjusted return for key business units and providing them with recommendations for potential mitigation",
+            "- Collected and processed data for monthly risk reports",
+            "- Extracted and transformed data to resolve data issues and find insights using SQL",
+            "- Wrote report and performed analysis on RWA, CAR, capital consumption and risk-adjusted return for key business units and providing them with recommendations for potential mitigation",
         ],
     },
-    // {
-    //     title: "Risk Management Associate ",
-    //     company_name: "Vietnam Prosperity Joint Stock Commercial Bank",
-    //     // icon: shopify,
-    //     iconBg: "#383E56",
-    //     date: "Sep 2021 - Mar 2022",
-    //     points: [
-    //         "Extracted and transformed data to resolve data issues and find insights using SQL",
-    //         "Wrote report and performed analysis on RWA, CAR, capital consumption and risk-adjusted return for key business units and providing them with recommendations for potential mitigation",
-    //     ],
-    // },
-    // {
-    //     title: "Financial Risk Advisory",
-    //     company_name: "Deloitte Consulting",
-    //     // icon: tesla,
-    //     iconBg: "#E6DEDD",
-    //     date: "Jan 2021 - Feb 2022",
-    //     points: [
-    //         "Conducted primary and secondary research, processed data on Excel, wrote reports for a gender equality research project of the IFC Vietnam",
-    //         "Conducted research on leading practices to develop grading tool, assessed client's performance, wrote reports and business requirements document, and assisted senior manager in project management for Fraud & Anti-money laundering consulting project of Military Commercial Joint Stock Bank",
-    //         "Performed compliance check at client's sites as part of the Sanofi compliance consulting project",
-    //     ],
-    // },
 ];
 
 const education = [
@@ -293,6 +294,44 @@ const projects = [
         source_code_link: "https://github.com/thuhale2210/comp229-group2-trackntrain",
     },
     {
+        name: "Restaurant Order App",
+        description:
+            "This Android app, using Tim Hortons' branding, enables customers to order food online for home delivery or store pick-up from a restaurant. It allows users to choose from various types of food and drinks, following a seamless navigation process through different menus and finally checkout with a payment method of their choice",
+        tags: [
+            {
+                name: "Solo Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "Kotlin",
+                color: "purple-text-gradient",
+            },
+            {
+                name: "Android Studio",
+                color: "green-text-gradient",
+            },
+        ],
+        image: restaurantorderapp,
+        source_code_link: "https://github.com/thuhale2210/restaurant-order-app",
+    },
+    {
+        name: "'TutorMe' Tutoring App",
+        description:
+            "A comprehensive Software Systems Design document for an innovative tutoring solution app, addressing challenges faced by students in higher education and proposing solutions to improve their learning experience",
+        tags: [
+            {
+                name: "Group Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "Software System Design Project",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: tutorme,
+        source_code_link: "https://drive.google.com/file/d/1Df8tyQqdGded2NAb94PBV5UFU71dDcgn/view?usp=share_link",
+    },
+    {
         name: "Portfolio Website",
         description:
             "A place to show my passion, projects, and achievements. A way to share my thoughts on the world and technology",
@@ -320,23 +359,6 @@ const projects = [
         ],
         image: portfolio,
         source_code_link: "https://github.com/thuhale2210/thuhale2210.github.io",
-    },
-    {
-        name: "'TutorMe' Tutoring App",
-        description:
-            "A comprehensive Software Systems Design document for an innovative tutoring solution app, addressing challenges faced by students in higher education and proposing solutions to improve their learning experience",
-        tags: [
-            {
-                name: "Group Project",
-                color: "yellow-text-gradient",
-            },
-            {
-                name: "Software System Design Project",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: tutorme,
-        source_code_link: "https://drive.google.com/file/d/1Df8tyQqdGded2NAb94PBV5UFU71dDcgn/view?usp=share_link",
     },
     {
         name: "Flappy Bird In Another World",

@@ -44,7 +44,7 @@ const EducationCard = ({ index, institution, degree, location, year }) => (
     <Tilt className='md:w-[300px] sm:w-[500px] xs:w-[300px] w-full'>
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-            className='w-full border border-gray-600 p-[1px] rounded-[20px] bg-[#304d6d] bg-opacity-20 shadow-card background-animate'
+            className='w-full p-[1px] rounded-[20px] bg-[#304d6d] bg-opacity-30 shadow-card background-animate'
         >
             <div
                 // eslint-disable-next-line react/no-unknown-property
@@ -71,7 +71,7 @@ const AchievementCard = ({ index, title, competition, year }) => (
     <Tilt className='md:w-[620px] sm:w-[500px] xs:w-[300px] w-full'>
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5 + 1, 0.75)}
-            className='w-full border border-gray-600 p-[1px] rounded-[20px] bg-[#907ad6] bg-opacity-20 shadow-card background-animate'
+            className='w-full p-[1px] rounded-[20px] bg-[#2e264b] bg-opacity-80 shadow-card background-animate'
         >
             <div
                 // eslint-disable-next-line react/no-unknown-property
@@ -100,7 +100,7 @@ const CertificateCard = () => {
         <Tilt className='md:w-[620px] sm:w-[500px] xs:w-[300px] w-full h-full'>
             <motion.div
                 variants={fadeIn("right", "spring", 1.5, 0.75)}
-                className='w-full border border-gray-600 p-[1px] rounded-[20px] bg-[#e27396] bg-opacity-10 shadow-card background-animate h-full'
+                className='w-full p-[1px] rounded-[20px] bg-[#e27396] bg-opacity-10 shadow-card background-animate h-full'
             >
                 <div className='rounded-[20px] py-5 px-8 min-h-[250px] flex justify-evenly flex-col mt-5'>
                     <div className='flex flex-wrap gap-5'>

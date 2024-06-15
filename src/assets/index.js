@@ -24,6 +24,12 @@ import tailwind from "./tech/tailwind.png";
 import unity from "./tech/unity.png";
 import linux from "./tech/linux.png";
 import oraclesql from "./tech/oraclesql.png";
+import kotlin from "./tech/kotlin.png";
+import nextjs from "./tech/nextjs.png";
+import java from "./tech/java.png";
+import nodejs from "./tech/nodejs.svg.png";
+import python from "./tech/python.svg.png";
+
 
 import flappybird from "./project/flappybird.gif";
 import pokemoncatcher from "./project/pokemoncatcher.gif";
@@ -32,6 +38,7 @@ import trackntrain from "./project/trackntrain.png";
 import portfolio from "./project/portfolio.png";
 import financetrackerapp from "./project/financetrackerapp.png";
 import tutorme from "./project/tutorme.png";
+import restaurantorderapp from "./project/restaurantorderapp.gif";
 import newproject from "./project/comingsoon.jpg";
 
 export {
@@ -60,6 +67,11 @@ export {
   tailwind,
   linux,
   oraclesql,
+  kotlin,
+  nextjs,
+  java,
+  nodejs,
+  python,
   flappybird,
   pokemoncatcher,
   newproject,
@@ -67,5 +79,6 @@ export {
   trackntrain,
   portfolio,
   financetrackerapp,
-  tutorme
+  tutorme,
+  restaurantorderapp
 };

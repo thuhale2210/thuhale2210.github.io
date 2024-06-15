@@ -21,10 +21,12 @@
 }
 
 @keyframes AnimationName {
+
   0%,
   100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
@@ -93,6 +95,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.purple-text-gradient {
+  background: #9155c5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #9155c5,
+      #6012fb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #9155c5,
+      #6012fb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2;
@@ -155,6 +173,40 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient-border {
+  position: relative;
+  padding: 1rem;
+  /* Adjust based on your design */
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  /* Adjust based on the border width */
+  left: -2px;
+  /* Adjust based on the border width */
+  right: -2px;
+  /* Adjust based on the border width */
+  bottom: -2px;
+  /* Adjust based on the border width */
+  border-radius: inherit;
+  padding: 4px;
+  /* Adjust to control the border thickness */
+  background: linear-gradient(90deg, transparent, #251e3d);
+  /* Adjust gradient colors as needed */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.gradient-border>* {
+  position: relative;
+}
+
 
 /* canvas- styles */
 .canvas-loader {

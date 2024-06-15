@@ -18,9 +18,9 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[16px] max-w-4xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]'
       >
-        I am Software Engineer student whose interests are in software development, cloud computing and security.
+        I am Software Engineer student whose interests are in software development, cloud and security.
         I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
         solutions that solve real-world problems. Let&apos;s work together to bring your ideas to life!
       </motion.p>
@@ -34,9 +34,9 @@ const About = () => {
       <motion.div
         variants={fadeIn("right", "spring", 1.5)}
         className="py-10">
-        <div className="grid gap-8 items-start place-items-end">
+        <div className="grid gap-8 items-start place-items-end text-[20px]">
           <div className="relative">
-            <div className="absolute -inset-1.5 border border-gray-600 rounded-lg shadow-card background-animate"></div>
+            <div className="absolute -inset-1.5 border-2 border-[#251e3d] rounded-xl shadow-card background-animate"></div>
             <DownloadButton />
           </div>
         </div>
@@ -50,7 +50,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full border border-gray-600 p-[1px] rounded-[20px] shadow-card background-animate'
+      className='w-full border-2 border-[#251e3d] p-[1px] rounded-[20px] shadow-card'
     >
       <div
         // eslint-disable-next-line react/no-unknown-property
@@ -66,7 +66,7 @@ const ServiceCard = ({ index, title, icon }) => (
           alt='web-development'
           className='w-16 h-16 object-contain'
         />
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[20px] text-center'>
           {title}
         </h3>
       </div>

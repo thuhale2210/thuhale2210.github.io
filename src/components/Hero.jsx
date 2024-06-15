@@ -21,7 +21,7 @@ const Hero = () => {
           <motion.div variants={textVariant()} className='flex flex-col xxxs:ml-0 xxs:ml-0 xs:ml-0 sm:ml-20 md:ml-20 lg:ml-28 xl:ml-36 mt-5'>
             <div className='flex flex-row'>
               <a href='#experience' className='flex items-center gap-2' onClick={() => { window.scrollTo(0, 0) }}>
-                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-tl-2xl bg-[#f0e6ef] p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-card background-animate'>
+                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-tl-2xl bg-[#f0e6ef] p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-card background-animate'>
                   <div className='w-full flex items-center justify-center mt-3'>
                     <img className='w-40 h-auto' src={computergif} alt='computer' />
                   </div>
@@ -32,7 +32,7 @@ const Hero = () => {
                 </div>
               </a>
               <a href='#education' className='flex items-center gap-2' onClick={() => { window.scrollTo(0, 0) }}>
-                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-tr-2xl bg-[#efc3e6] flex flex-col p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-card background-animate'>
+                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-tr-2xl bg-[#efc3e6] flex flex-col p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-card background-animate'>
                   <div className='w-full flex items-center justify-center mt-5'>
                     <img className='w-36 h-auto' src={educationgif} alt='education' />
                   </div>
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
             <div className='flex flex-row'>
               <a href='#projects' className='flex items-center gap-2' onClick={() => { window.scrollTo(0, 0) }}>
-                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-bl-2xl bg-[#b8bedd] flex flex-col p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-card background-animate'>
+                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-bl-2xl bg-[#b8bedd] flex flex-col p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-card background-animate'>
                   <div className='w-full flex justify-center items-center mt-2'>
                     <img className='w-40 h-auto' src={projectgif} alt='project' />
                   </div>
@@ -57,7 +57,7 @@ const Hero = () => {
               </a>
 
               <a href='#contact' className='flex items-center gap-2' onClick={() => { window.scrollTo(0, 0) }}>
-                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-br-2xl bg-[#9c89b8] flex flex-col p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-card background-animate'>
+                <div className='xxxs:w-36 xxs:w-44 xs:w-44 sm:w-72 md:w-72 lg:w-96 xl:w-[400px] xxxs:h-52 xxs:h-52 xs:h-60 sm:h-72 lg:h-80 rounded-br-2xl bg-[#9c89b8] flex flex-col p-5 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-card background-animate'>
                   <div className='w-full flex items-center justify-center mt-5'>
                     <img className='w-32 h-auto' src={contactgif} alt='contact' />
                   </div>
