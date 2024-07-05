@@ -36,7 +36,7 @@ import pokemoncatcher from "./project/pokemoncatcher.gif";
 import fitnessapp from "./project/fitnessapp.png";
 import trackntrain from "./project/trackntrain.png";
 import portfolio from "./project/portfolio.png";
-import financetrackerapp from "./project/financetrackerapp.png";
+import financetrackerapp from "./project/financetrackerapp.gif";
 import tutorme from "./project/tutorme.png";
 import restaurantorderapp from "./project/restaurantorderapp.gif";
 import newproject from "./project/comingsoon.jpg";

@@ -236,9 +236,9 @@ const certificates = [
 
 const projects = [
     {
-        name: "Personal Finance Tracking App (Coming Soon)",
+        name: "'Finance Finesse' App",
         description:
-            "An app that provides users with a range of financial tracking features, including expense tracking, income monitoring, budgeting tools, and data visualizations to help them gain insights into their financial health",
+            "A 2-in-1 banking solution that provides users with a range of financial tracking features, including expense tracking, income monitoring, budgeting tools, and data visualizations to help them gain insights into their financial health. The app also offers a secure and convenient way to manage their bank accounts and credit cards",
         tags: [
             {
                 name: "Solo Project",
@@ -257,8 +257,12 @@ const projects = [
                 color: "pink-text-gradient",
             },
             {
-                name: "MongoDB",
+                name: "Appwrite",
                 color: "green-text-gradient",
+            },
+            {
+                name: "Coming in August 2024",
+                color: "red-text-gradient",
             },
         ],
         image: financetrackerapp,
