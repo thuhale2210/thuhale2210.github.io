@@ -30,10 +30,12 @@ import java from "./tech/java.png";
 import nodejs from "./tech/nodejs.svg.png";
 import python from "./tech/python.svg.png";
 
-
+import comingsoon from "./project/comingsoon.jpg";
 import flappybird from "./project/flappybird.gif";
 import pokemoncatcher from "./project/pokemoncatcher.gif";
 import fitnessapp from "./project/fitnessapp.png";
+import baseballplayerstats from "./project/comp212-baseball-stats.gif";
+import restaurantbillcalculator from "./project/comp212-restaurant-bill-calculator.gif";
 import trackntrain from "./project/trackntrain.png";
 import portfolio from "./project/portfolio.png";
 import financetrackerapp from "./project/financetrackerapp.gif";
@@ -72,11 +74,14 @@ export {
   java,
   nodejs,
   python,
+  comingsoon,
   flappybird,
   pokemoncatcher,
+  baseballplayerstats,
   newproject,
   fitnessapp,
   trackntrain,
+  restaurantbillcalculator,
   portfolio,
   financetrackerapp,
   tutorme,

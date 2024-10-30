@@ -18,10 +18,13 @@ import {
     flappybird,
     pokemoncatcher,
     trackntrain,
+    baseballplayerstats,
+    restaurantbillcalculator,
     portfolio,
     financetrackerapp,
     tutorme,
     restaurantorderapp,
+    comingsoon,
     csharp,
     unity,
     linux,
@@ -215,12 +218,6 @@ const certificates = [
         credential_link: "https://www.credly.com/badges/607970d8-bd05-48c5-9663-8ab02ffec1b8",
     },
     {
-        name: "GARP Financial Risk Manager (FRM) Part I",
-        organization: "Global Association of Risk Professionals (GARP)",
-        credentialnumber: "GARP ID: 1729934",
-        credential_link: "https://drive.google.com/file/d/1YVNwTWXYXM4DZ-t2lqmr7tRYDfbzY46e/view?usp=share_link",
-    },
-    {
         name: "Info-Tech Security and Risk",
         organization: "Info-Tech",
         credentialnumber: "Credential ID: 38741",
@@ -231,6 +228,12 @@ const certificates = [
         organization: "Info-Tech",
         credentialnumber: "Credential ID: 38565",
         credential_link: "https://drive.google.com/file/d/1KXjPUpMWldMAJO81Tjvu1g1znxeqwSOM/view?usp=share_link",
+    },
+    {
+        name: "GARP Financial Risk Manager (FRM) Part I",
+        organization: "Global Association of Risk Professionals (GARP)",
+        credentialnumber: "GARP ID: 1729934",
+        credential_link: "https://drive.google.com/file/d/1YVNwTWXYXM4DZ-t2lqmr7tRYDfbzY46e/view?usp=share_link",
     },
 ];
 
@@ -260,13 +263,9 @@ const projects = [
                 name: "Appwrite",
                 color: "green-text-gradient",
             },
-            {
-                name: "Coming in August 2024",
-                color: "red-text-gradient",
-            },
         ],
         image: financetrackerapp,
-        source_code_link: " ",
+        source_code_link: "https://github.com/thuhale2210/finance-finesse-a-banking-app",
     },
     {
         name: "'TrackNTrain' Fitness App",
@@ -319,23 +318,6 @@ const projects = [
         source_code_link: "https://github.com/thuhale2210/restaurant-order-app",
     },
     {
-        name: "'TutorMe' Tutoring App",
-        description:
-            "A comprehensive Software Systems Design document for an innovative tutoring solution app, addressing challenges faced by students in higher education and proposing solutions to improve their learning experience",
-        tags: [
-            {
-                name: "Group Project",
-                color: "yellow-text-gradient",
-            },
-            {
-                name: "Software System Design Project",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: tutorme,
-        source_code_link: "https://drive.google.com/file/d/1Df8tyQqdGded2NAb94PBV5UFU71dDcgn/view?usp=share_link",
-    },
-    {
         name: "Portfolio Website",
         description:
             "A place to show my passion, projects, and achievements. A way to share my thoughts on the world and technology",
@@ -363,6 +345,52 @@ const projects = [
         ],
         image: portfolio,
         source_code_link: "https://github.com/thuhale2210/thuhale2210.github.io",
+    },
+    {
+        name: "Baseball Player Statistics",
+        description:
+            "This WPF application is a project built using C# and ADO.NET Entity Framework. It provides a user interface to interact with the `Players` table in the `Baseball` database. The application allows users to search for players by name or ID, display all players, calculate batting averages, and more",
+        tags: [
+            {
+                name: "Solo Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "C-sharp",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "WPF",
+                color: "green-text-gradient",
+            },
+            {
+                name: "ADO.NET Entity Framework",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: baseballplayerstats,
+        source_code_link: "https://github.com/thuhale2210/comp212-baseball-player-stats",
+    },
+    {
+        name: "Restaurant Bill Calculator",
+        description:
+            "A WPF (.NET Framework) app that calculates a restaurant table's bill",
+        tags: [
+            {
+                name: "Solo Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "C-sharp",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "WPF",
+                color: "green-text-gradient",
+            },
+        ],
+        image: restaurantbillcalculator,
+        source_code_link: "https://github.com/thuhale2210/comp212-lab3-restaurant-bill-calculator",
     },
     {
         name: "Flappy Bird In Another World",
@@ -409,6 +437,23 @@ const projects = [
         ],
         image: pokemoncatcher,
         source_code_link: "https://github.com/thuhale2210/Pokemon-Catcher---A-Simple-Canvas-Game",
+    },
+    {
+        name: "'TutorMe' Tutoring App",
+        description:
+            "A comprehensive Software Systems Design document for an innovative tutoring solution app, addressing challenges faced by students in higher education and proposing solutions to improve their learning experience",
+        tags: [
+            {
+                name: "Group Project",
+                color: "yellow-text-gradient",
+            },
+            {
+                name: "Software System Design Project",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: tutorme,
+        source_code_link: "https://drive.google.com/file/d/1Df8tyQqdGded2NAb94PBV5UFU71dDcgn/view?usp=share_link",
     },
 ];
 
