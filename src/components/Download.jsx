@@ -1,5 +1,3 @@
-// import { saveAs } from 'file-saver';
-
 const RESUME_PDF_URL = 'https://drive.google.com/file/d/1eiUuLXJV09FJKoyLJYQ52TCLhTRn2YR1/view?usp=share_link'
 
 function DownloadButton() {

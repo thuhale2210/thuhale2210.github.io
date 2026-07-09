@@ -3,9 +3,27 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close, github, linkedin } from "../assets";
+import { menu, close, github, linkedin, wordpress } from "../assets";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/thuhale2210/",
+    icon: linkedin,
+  },
+  {
+    label: "WordPress",
+    href: "https://binaryblooms.wordpress.com/",
+    icon: wordpress,
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/thuhale2210",
+    icon: github,
+  }
+];
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -32,25 +50,25 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-          <div className="flex justify-items-end gap-10">
-            <div className="border-white rounded-full">
-              <li onClick={() => window.open('https://github.com/thuhale2210')}
-                className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+          <div className="flex justify-items-end gap-6">
+            {socialLinks.map((social) => (
+              <button
+                key={social.label}
+                type='button'
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.open(social.href, "_blank", "noreferrer");
+                }}
+                className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer transition hover:-translate-y-1'
+                aria-label={`Open ${social.label}`}
+              >
                 <img
-                  src={github}
-                  alt='github'
+                  src={social.icon}
+                  alt=''
                   className='w-3/4 h-3/4 object-contain'
                 />
-              </li>
-            </div>
-            <li onClick={() => window.open('https://www.linkedin.com/in/thuhale2210/')}
-              className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
-              <img
-                src={linkedin}
-                alt='github'
-                className='w-3/4 h-3/4 object-contain'
-              />
-            </li>
+              </button>
+            ))}
           </div>
         </Link>
 

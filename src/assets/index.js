@@ -4,6 +4,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import linkedin from "./linkedin.png";
+import wordpress from "./wordpress.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import previousworkicon from "./previouswork.png";
@@ -41,6 +42,10 @@ import portfolio from "./project/portfolio.png";
 import financetrackerapp from "./project/financetrackerapp.gif";
 import tutorme from "./project/tutorme.png";
 import restaurantorderapp from "./project/restaurantorderapp.gif";
+import communityengagementapp from "./project/communityengagementapp.gif";
+import biketheftmodel from "./project/biketheftmodel.gif";
+import iguanaXdemo from "./project/iguanaXdemo.gif";
+import vpcpeering from "./project/vpcpeering.png";
 import newproject from "./project/comingsoon.jpg";
 
 export {
@@ -50,6 +55,9 @@ export {
   web,
   github,
   linkedin,
+  wordpress,
+  biketheftmodel,
+  iguanaXdemo,
   menu,
   close,
   previousworkicon,
@@ -85,5 +93,7 @@ export {
   portfolio,
   financetrackerapp,
   tutorme,
-  restaurantorderapp
+  restaurantorderapp,
+  communityengagementapp,
+  vpcpeering
 };

@@ -29,25 +29,17 @@ import {
     unity,
     linux,
     oraclesql,
-    backend
+    backend,
+    communityengagementapp,
+    biketheftmodel,
+    iguanaXdemo,
+    vpcpeering
 } from "../assets";
 
 export const navLinks = [
     {
         id: "home",
         title: "Home",
-    },
-    {
-        id: "about",
-        title: "About",
-    },
-    {
-        id: "experience",
-        title: "Experience",
-    },
-    {
-        id: "education",
-        title: "Education",
     },
     {
         id: "projects",
@@ -114,14 +106,6 @@ const technologies = [
         name: "Kotlin",
         icon: kotlin,
     },
-    // {
-    //     name: "HTML 5",
-    //     icon: html,
-    // },
-    // {
-    //     name: "CSS 3",
-    //     icon: css,
-    // },
     {
         name: "Next.js",
         icon: nextjs,
@@ -154,10 +138,6 @@ const technologies = [
         name: "Linux",
         icon: linux,
     },
-    // {
-    //     name: "Unity",
-    //     icon: unity,
-    // }
 ];
 
 const experiences = [
@@ -297,6 +277,106 @@ const projects = [
         source_code_link: "https://github.com/thuhale2210/comp229-group2-trackntrain",
     },
     {
+        name: "Community Engagement App",
+        description:
+            "An AI-driven community engagement platform built with a microservices architecture. The app allows users to create and join communities, post content, and interact with other members. It leverages AI to provide personalized content recommendations and moderation tools to ensure a safe and engaging environment",
+        tags: [
+            {
+                name: "Node.js",
+                color: "",
+            },
+            {
+                name: "React.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "HTML",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: communityengagementapp,
+        source_code_link: "https://github.com/thuhale2210/comp308-final-project",
+    },
+    {
+        name: "Bike Theft Recovery Prediction",
+        description:
+            "A machine learning project using Toronto Police bicycle theft open data to predict whether a stolen bike is likely to be recovered. The project includes data cleaning, exploratory analysis, feature selection, class imbalance handling with SMOTE-ENN, Logistic Regression and Decision Tree model comparison, Power BI dashboarding, and Flask API deployment.",
+        tags: [
+            {
+                name: "Python",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Machine Learning",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Power BI",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Flask",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: biketheftmodel,
+        source_code_link: "https://github.com/thuhale2210/comp309-final-project",
+    },
+    {
+        name: "HL7 Integration Pipeline on AWS",
+        description:
+            "A cloud-based healthcare messaging pipeline built with IguanaX and AWS. The project uses two EC2 instances behind a Network Load Balancer for high availability, with HL7 message validation/routing, failover testing, S3-based logging, Slack alerts, and PII masking for non-production workflows.",
+        tags: [
+            {
+                name: "AWS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "HL7",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "IguanaX",
+                color: "green-text-gradient",
+            },
+            {
+                name: "S3",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: iguanaXdemo,
+        source_code_link: "https://github.com/thuhale2210/iguanax-secondary-demo",
+    },
+    {
+        name: "Securing VPC Peering across AWS and GCP",
+        description:
+            "A cloud security proof-of-concept focused on secure VPC peering across AWS and GCP. The project explores private cloud-to-cloud communication, trusted and untrusted network paths, routing, access control, and security best practices for protecting cloud network connections.",
+        tags: [
+            {
+                name: "AWS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "GCP",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "VPC Peering",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Cloud Security",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: vpcpeering,
+        source_code_link: "https://binaryblooms.wordpress.com/2025/05/01/peering-across-the-clouds-project-introduction-strengthening-vpc-connections-on-aws-and-gcp/",
+    },
+    {
         name: "Restaurant Order App",
         description:
             "This Android app, using Tim Hortons' branding, enables customers to order food online for home delivery or store pick-up from a restaurant. It allows users to choose from various types of food and drinks, following a seamless navigation process through different menus and finally checkout with a payment method of their choice",
@@ -316,35 +396,6 @@ const projects = [
         ],
         image: restaurantorderapp,
         source_code_link: "https://github.com/thuhale2210/restaurant-order-app",
-    },
-    {
-        name: "Portfolio Website",
-        description:
-            "A place to show my passion, projects, and achievements. A way to share my thoughts on the world and technology",
-        tags: [
-            {
-                name: "Solo Project",
-                color: "yellow-text-gradient",
-            },
-            {
-                name: "JavaScript",
-                color: "",
-            },
-            {
-                name: "React.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "HTML",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Tailwind CSS",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: portfolio,
-        source_code_link: "https://github.com/thuhale2210/thuhale2210.github.io",
     },
     {
         name: "Baseball Player Statistics",
